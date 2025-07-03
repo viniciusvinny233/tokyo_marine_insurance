@@ -1,1 +1,37 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"tokyomarineinsurance-51ab4","appId":"1:418767284399:android:ed8423564b2f2d9a664c5a","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"tokyomarineinsurance-51ab4","configurations":{"android":"1:418767284399:android:ed8423564b2f2d9a664c5a","ios":"1:418767284399:ios:9ff8810b237b1e5f664c5a","web":"1:418767284399:web:f5bd7a02138adfe1664c5a"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "tokyomarineinsurance-51ab4",
+          "appId": "1:418767284399:android:ed8423564b2f2d9a664c5a",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "tokyomarineinsurance-51ab4",
+          "configurations": {
+            "android": "1:418767284399:android:ed8423564b2f2d9a664c5a",
+            "ios": "1:418767284399:ios:9ff8810b237b1e5f664c5a",
+            "web": "1:418767284399:web:f5bd7a02138adfe1664c5a"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
