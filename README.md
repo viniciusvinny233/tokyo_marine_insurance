@@ -12,8 +12,8 @@ Quer ver o projeto rodando? É **super simples** e **rápido**! ⚡
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/tokyo-marine-insurance.git](https://github.com/seu-usuario/tokyo-marine-insurance.git)
-    cd tokyo-marine-insurance
+    git clone https://github.com/viniciusvinny233/tokyo_marine_insurance.git
+    cd .\tokyo_marine_insurance\
     ```
 
 2.  **Instale as dependências:**
