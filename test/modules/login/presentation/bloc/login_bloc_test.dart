@@ -45,8 +45,8 @@ void main() {
   );
 
   group('LoginSubmitted', () {
-    final tCpf = '123.456.789-00';
-    final tPassword = 'password123';
+    const tCpf = '123.456.789-00';
+    const tPassword = 'password123';
     final tUserEntity = UserEntity(
       id: 'test-id',
       cpf: tCpf,
@@ -64,7 +64,7 @@ void main() {
         )).thenAnswer((_) async => tUserEntity);
         return loginBloc;
       },
-      act: (bloc) => bloc.add(LoginSubmitted(cpf: tCpf, password: tPassword)),
+      act: (bloc) => bloc.add(const LoginSubmitted(cpf: tCpf, password: tPassword)),
       expect: () => [
         const LoginState(authMode: AuthMode.login, formStatus: FormStatus.loading),
         const LoginState(authMode: AuthMode.login, formStatus: FormStatus.success),
@@ -83,7 +83,7 @@ void main() {
         )).thenAnswer((_) async => null);
         return loginBloc;
       },
-      act: (bloc) => bloc.add(LoginSubmitted(cpf: tCpf, password: tPassword)),
+      act: (bloc) => bloc.add(const LoginSubmitted(cpf: tCpf, password: tPassword)),
       expect: () => [
         const LoginState(authMode: AuthMode.login, formStatus: FormStatus.loading),
         const LoginState(
@@ -111,7 +111,7 @@ void main() {
         );
         return loginBloc;
       },
-      act: (bloc) => bloc.add(LoginSubmitted(cpf: tCpf, password: tPassword)),
+      act: (bloc) => bloc.add(const LoginSubmitted(cpf: tCpf, password: tPassword)),
       expect: () => [
         const LoginState(authMode: AuthMode.login, formStatus: FormStatus.loading),
         predicate<LoginState>((state) => 
@@ -127,8 +127,8 @@ void main() {
   });
 
   group('RegisterSubmitted', () {
-    final tCpf = '123.456.789-00';
-    final tPassword = 'password123';
+    const tCpf = '123.456.789-00';
+    const tPassword = 'password123';
     final tUserEntity = UserEntity(
       id: 'test-id',
       cpf: tCpf,
@@ -146,7 +146,7 @@ void main() {
         )).thenAnswer((_) async => tUserEntity);
         return loginBloc;
       },
-      act: (bloc) => bloc.add(RegisterSubmitted(cpf: tCpf, password: tPassword)),
+      act: (bloc) => bloc.add(const RegisterSubmitted(cpf: tCpf, password: tPassword)),
       expect: () => [
         const LoginState(authMode: AuthMode.login, formStatus: FormStatus.loading),
         const LoginState(authMode: AuthMode.login, formStatus: FormStatus.success),
@@ -165,7 +165,7 @@ void main() {
         )).thenAnswer((_) async => null);
         return loginBloc;
       },
-      act: (bloc) => bloc.add(RegisterSubmitted(cpf: tCpf, password: tPassword)),
+      act: (bloc) => bloc.add(const RegisterSubmitted(cpf: tCpf, password: tPassword)),
       expect: () => [
         const LoginState(authMode: AuthMode.login, formStatus: FormStatus.loading),
         const LoginState(

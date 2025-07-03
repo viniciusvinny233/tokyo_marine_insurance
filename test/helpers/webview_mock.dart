@@ -32,8 +32,8 @@ class MockWebViewPlatform extends WebViewPlatform {
 }
 
 class MockPlatformWebViewController extends PlatformWebViewController {
-  MockPlatformWebViewController(PlatformWebViewControllerCreationParams params)
-      : super.implementation(params);
+  MockPlatformWebViewController(super.params)
+      : super.implementation();
   
   @override
   Future<void> loadRequest(LoadRequestParams params) async {}
@@ -54,8 +54,8 @@ class MockPlatformWebViewController extends PlatformWebViewController {
 }
 
 class MockPlatformWebViewWidget extends PlatformWebViewWidget {
-  MockPlatformWebViewWidget(PlatformWebViewWidgetCreationParams params)
-      : super.implementation(params);
+  MockPlatformWebViewWidget(super.params)
+      : super.implementation();
   
   @override
   Widget build(BuildContext context) {
@@ -64,16 +64,16 @@ class MockPlatformWebViewWidget extends PlatformWebViewWidget {
 }
 
 class MockPlatformWebViewCookieManager extends PlatformWebViewCookieManager {
-  MockPlatformWebViewCookieManager(PlatformWebViewCookieManagerCreationParams params)
-      : super.implementation(params);
+  MockPlatformWebViewCookieManager(super.params)
+      : super.implementation();
   
   @override
   Future<bool> clearCookies() async => true;
 }
 
 class MockPlatformNavigationDelegate extends PlatformNavigationDelegate {
-  MockPlatformNavigationDelegate(PlatformNavigationDelegateCreationParams params)
-      : super.implementation(params);
+  MockPlatformNavigationDelegate(super.params)
+      : super.implementation();
   
   @override
   Future<void> setOnNavigationRequest(NavigationRequestCallback onNavigationRequest) async {}

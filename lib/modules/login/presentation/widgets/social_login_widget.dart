@@ -52,7 +52,7 @@ class SocialLoginWidget extends StatelessWidget {
             fontSize: subTextSize,
           ),
         ),
-        SizedBox(height: kIsWeb ? 15.0 : 0),
+        const SizedBox(height: kIsWeb ? 15.0 : 0),
         Container(
           constraints: const BoxConstraints(
             maxWidth: kIsWeb ? 360.0 : 220.0,

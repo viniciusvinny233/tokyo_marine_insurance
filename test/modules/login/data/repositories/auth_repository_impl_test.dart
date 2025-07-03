@@ -19,8 +19,8 @@ void main() {
   });
 
   group('login', () {
-    final tCpf = '123.456.789-00';
-    final tPassword = 'password123';
+    const tCpf = '123.456.789-00';
+    const tPassword = 'password123';
     final tUser = MockUser();
 
     setUp(() {
@@ -61,8 +61,8 @@ void main() {
   });
 
   group('register', () {
-    final tCpf = '123.456.789-00';
-    final tPassword = 'password123';
+    const tCpf = '123.456.789-00';
+    const tPassword = 'password123';
     final tUser = MockUser();
 
     setUp(() {

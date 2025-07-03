@@ -17,8 +17,8 @@ void main() {
     loginUseCase = LoginUseCase(mockAuthRepository);
   });
 
-  final tCpf = '123.456.789-00';
-  final tPassword = 'password123';
+  const tCpf = '123.456.789-00';
+  const tPassword = 'password123';
   final tUserEntity = UserEntity(
     id: 'test-id',
     cpf: tCpf,
