@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "418767284399",
+    "project_id": "tokyomarineinsurance-51ab4",
+    "storage_bucket": "tokyomarineinsurance-51ab4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418767284399:android:ed8423564b2f2d9a664c5a",
+        "android_client_info": {
+          "package_name": "br.com.tokyo.tokyo_marine_insurance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPSQ4FZncNNQGAsyB5vxK9zaZdcDa0Gn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
